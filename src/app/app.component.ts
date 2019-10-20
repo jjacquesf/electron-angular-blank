@@ -22,6 +22,11 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+
+      window.addEventListener('online',  () => { console.log( 'online' ); })
+      window.addEventListener('offline',  () => { console.log( 'offline' ); })
+    
+
     });
   }
 }

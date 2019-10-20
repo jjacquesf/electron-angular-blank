@@ -1,5 +1,7 @@
 {
   "name": "electron-blank",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

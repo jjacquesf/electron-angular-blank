@@ -1,4 +1,6 @@
+import { LoginService } from './../services/login.service';
 import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,12 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private loginService: LoginService) {}
+
+  public login() {
+    console.log(this.loginService.login('jjacquesf@gmail.com'));
+    // if(this.electronService.isElectronApp) {
+    // }
+  }
 
 }
